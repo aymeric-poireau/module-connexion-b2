@@ -36,9 +36,7 @@ if (isset($_POST['submit'])) {
             echo 'alert("Erreur, les informations n\'ont pas été enregistrées")';
             echo '</script>';
         } else {
-            echo '<script type="text/javascript">';
-            echo 'alert("Vous avez été enregistré")';
-            echo '</script>';
+            header("Location: connexion.php");
         }
     } else {
         echo '<script type="text/javascript">';
