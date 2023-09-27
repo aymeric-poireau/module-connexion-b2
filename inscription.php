@@ -12,7 +12,6 @@ require 'Database.php';
 ini_set("log_errors", 1);
 ini_set("display_errors", 1);
 error_reporting(E_ALL);
-session_start();
 $database = new Database();
 $pdo = $database->getPdo();
 
