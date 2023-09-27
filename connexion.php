@@ -30,9 +30,7 @@ if (isset($_POST['submit'])) {
         echo 'alert("Connexion en cours...")';
         echo '</script>';
     } else {
-        echo '<script type="text/javascript">';
-        echo 'alert("Erreur, les informations sont incorrectes")';
-        echo '</script>';
+        header("Location: index.php.php");
     }
 }?>
 <div class="column">
