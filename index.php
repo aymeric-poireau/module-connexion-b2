@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Forum du Livre d'or</title>
+  <?php>
+	require 'Database.php'
+	$database = new Database();
+	$pdo = $database->getPdo();
+   ?>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <style>
 
@@ -12,6 +16,12 @@
 	 body {
      text-align: center;
      margin-top: 20px;
+     background-image: url("bandes_bleu.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
     }
 
     h2, h4, h5 {
