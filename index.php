@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <?php>
-	require 'Database.php'
-	$database = new Database();
-	$pdo = $database->getPdo();
-   ?>
+ 
   <link rel="stylesheet" type="text/css" href="styles.css">
   <style>
 
@@ -95,7 +91,7 @@
       <ul>
       <li><a href="index.php">Accueil</a></li>
 
-      <li><a href="login.php">inscription</a></li>
+      <li><a href="inscription.php">inscription</a></li>
       <li><a href="https://github.com/aymeric-poireau/module-connexion-b2">Github_moduleconnection</a></li>
       </ul>
       <div class="navbar-left">
@@ -105,7 +101,7 @@
       </div>
       <div class="navbar-right">
 	  <a href="profil.php">
-          <img src="istockphoto.jpg" alt="image">
+          <img src="image_profil.png" alt="image">
         </a>
       </div>
     </div>
@@ -115,4 +111,4 @@
     <h1>Bienvenue sur le Formulaire de connection</h1>
     
 </body>
-</html>
+	</html>
