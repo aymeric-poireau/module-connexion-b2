@@ -73,7 +73,9 @@
 
   <script>
     function startTimer() {
-      setTimeout(myFunction, 3000);
+	if ($_SESSION != $_SESSION['login']) {
+      		setTimeout(myFunction, 3000);
+	}
     }
 
     function myFunction() {
